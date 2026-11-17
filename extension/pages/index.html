@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ASCII Animals</title>
+    <link rel="stylesheet" href="../../page.css" />
+  </head>
+  <body>
+    <canvas aria-hidden="true"></canvas>
+    <main class="stage">
+      <div class="masthead"><h1 class="greeting"></h1></div>
+      <form class="composer glass" role="search" autocomplete="off">
+        <div class="composer-field">
+          <svg class="composer-search" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="m15.5 15.5 5 5" />
+          </svg>
+          <input name="query" type="search" placeholder="Search the web" aria-label="Search the web" required />
+          <button type="submit" class="search-submit">Search</button>
+        </div>
+      </form>
+      <p class="search-error" role="status" hidden></p>
+      <section class="shortcuts" aria-labelledby="shortcuts-title" hidden>
+        <h2 id="shortcuts-title">Shortcuts</h2>
+        <div class="shortcut-grid"></div>
+      </section>
+    </main>
+    <script type="module" src="../newtab.ts"></script>
+  </body>
+</html>

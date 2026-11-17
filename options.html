@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ASCII Animals settings</title>
+    <script type="module" crossorigin src="./assets/options.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill.js">
+    <link rel="modulepreload" crossorigin href="./assets/settings.js">
+    <link rel="stylesheet" crossorigin href="./assets/options.css">
+  </head>
+  <body>
+    <main class="settings">
+      <header>
+        <p class="eyebrow">ASCII Animals</p>
+        <h1>Personalization</h1>
+        <p>Make every new tab yours. Each animal keeps its own controls and glass settings. Changes save automatically.</p>
+      </header>
+      <section class="card basics" aria-labelledby="basics-title">
+        <h2 id="basics-title">New tab</h2>
+        <label for="mode">Selection mode</label>
+        <select id="mode">
+          <option value="single">One animal</option>
+          <option value="random">Random animal</option>
+        </select>
+        <fieldset id="random-pool" hidden>
+          <legend>Animals in the random pool</legend>
+          <p class="hint">Each new tab picks one of these animals. Select at least one.</p>
+          <div id="random-animals"></div>
+        </fieldset>
+        <label for="animal" id="animal-label">Animal</label>
+        <select id="animal"></select>
+        <p id="animal-help" class="hint" hidden>This picker chooses which animal's controls you edit. It does not change the random pool.</p>
+        <label for="name">Greeting name</label>
+        <input id="name" type="text" maxlength="40" autocomplete="off" placeholder="Leave blank for no name" />
+      </section>
+      <div id="controls"></div>
+      <p id="status" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>

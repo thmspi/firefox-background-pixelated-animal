@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill.js";const t=document.querySelector("#open-settings");t.addEventListener("click",()=>{browser.runtime.openOptionsPage().then(()=>window.close()).catch(()=>{t.textContent="Could not open settings"})});
