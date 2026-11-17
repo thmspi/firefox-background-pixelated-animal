@@ -1,20 +1,29 @@
 {
   "manifest_version": 3,
-  "name": "ASCII Animals",
-  "version": "0.1.3",
+  "name": "bg-ascii-animals",
+  "version": "0.1.7",
   "description": "Animated ASCII animals on every new Firefox tab.",
+  "icons": {
+    "32": "icons/koi-32.png",
+    "64": "icons/koi-64.png",
+    "128": "icons/koi-128.png"
+  },
   "permissions": ["storage", "search", "topSites"],
   "chrome_url_overrides": { "newtab": "index.html" },
   "options_ui": { "page": "options.html", "open_in_tab": true },
   "action": {
     "default_area": "navbar",
-    "default_icon": "icon.svg",
-    "default_title": "ASCII Animals settings",
+    "default_icon": {
+      "16": "icons/koi-16.png",
+      "32": "icons/koi-32.png",
+      "64": "icons/koi-64.png"
+    },
+    "default_title": "bg-ascii-animals settings",
     "default_popup": "popup.html"
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "ascii-animals@extension.local",
+      "id": "{3775f2cd-d35e-4425-8200-7125af531704}",
       "strict_min_version": "142.0",
       "data_collection_permissions": { "required": ["none"] }
     }

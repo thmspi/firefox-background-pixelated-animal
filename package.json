@@ -1,6 +1,6 @@
 {
-  "name": "ascii-animals",
-  "version": "0.1.3",
+  "name": "bg-ascii-animals",
+  "version": "0.1.7",
   "private": true,
   "license": "MIT",
   "type": "module",
